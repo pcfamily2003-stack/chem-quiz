@@ -7,7 +7,8 @@ const FILES_TO_CACHE = [
   './index.html',
   './manifest.json',
   './icon-192.png',
-  './icon-512.png'
+  './icon-512.png',
+  './privacy-policy.html'
 ];
 
 // عند أول تثبيت: نزّل وخزّن كل ملفات التطبيق

@@ -9,6 +9,14 @@
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icon-192.png">
 <title>ذرّة — اختبر معلوماتك في الكيمياء</title>
+<!--
+  == كود Google AdSense ==
+  1) بعد إنشاء حسابك على https://google.com/adsense وإضافة موقعك،
+     سيعطيك Google سطرًا يشبه هذا بالضبط لكن برقم publisher الخاص بك:
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2469962044411502" crossorigin="anonymous"></script>
+  2) استبدل السطر التالي بالسطر الذي أعطاك إياه Google (رقم ca-pub سيختلف):
+-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2469962044411502" crossorigin="anonymous"></script>
 <!-- تمت إزالة الاعتماد على خطوط جوجل الخارجية (Google Fonts) لأن التطبيق يعمل الآن بدون إنترنت داخل APK.
      إذا رغبت لاحقًا بتضمين خط Tajawal محليًا، نزّل ملفات woff2 من https://fonts.google.com/specimen/Tajawal
      وضعها في مجلد www/fonts ثم أضف قاعدة @font-face تشير إليها محليًا. -->
@@ -194,6 +202,22 @@ body.offline .offline-indicator{display:block}
 </style>
 </head>
 <body>
+<!--
+  == مكان الإعلان (Ad Unit) ==
+  بعد موافقة Google على موقعك، من لوحة AdSense أنشئ "وحدة إعلانية" (Ad unit)
+  وستعطيك كودًا يشبه هذا (بأرقام data-ad-slot و data-ad-client خاصة بك):
+
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-2469962044411502"
+       data-ad-slot="XXXXXXXXXX"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  الصق هذا الكود مكان هذا التعليق (أو في أي مكان آخر تريد الإعلان أن يظهر فيه).
+  لا تضع أكثر من إعلان أو إعلانين في تطبيق تعليمي بسيط حتى لا تُزعج الطلاب.
+-->
 <div class="app">
   <button class="theme-toggle" id="themeToggle" aria-label="تبديل الثيم">
     <svg viewBox="0 0 24 24" id="themeIcon">
@@ -914,5 +938,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
   }
 });
 </script>
+<footer style="text-align:center; padding:16px; font-size:13px; color:#94a3b8;">
+  <a href="./privacy-policy.html" style="color:#94a3b8; text-decoration:underline;">سياسة الخصوصية</a>
+</footer>
 </body>
 </html>
